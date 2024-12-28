@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <title>FORCE 12</title>
+      <link type="text/css" href="css/style.css">
+      <link ref="js/bootstrap-4.0.0-dist/css/bootstrap.min.css">
+      <link href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+
+  </head>
+  <body>
+    <!DOCTYPE html>
+    <html>
+    <head>
+        <title>CSV Data</title>
+    </head>
+    <body>
+        <h1>CSV Data</h1>
+        <table border="1">
+            <thead>
+                <tr>
+                    <th>id</th>
+                    <th>rang</th>
+                    <th>enonce</th>
+                </tr>
+            </thead>
+            <tbody>
+                <% var compteur = 0;
+                    donnee.forEach(row => { %>
+                    <tr>
+                        <td><%= row.id %></td>
+                        <td><%= row.rang %></td>
+                        <td><%= row.enonce %></td>
+                    </tr>
+                    <% compteur++; %>
+                <% }) %>
+                <tr><%= compteur %></tr>
+                <tr>
+                    <%= Math.floor(Math.random() * nblig) %>
+                </tr>
+            </tbody>
+        </table>
+    </body>
+    </html>
+    
+  </body>
+</html>

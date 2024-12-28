@@ -1,0 +1,8 @@
+https://www.digitalocean.com/community/tutorials/how-to-use-ejs-to-template-your-node-application POUR METTRE LE MENU FORCE 12 EN HAUT SUR TOUTES LES PAGES. (PAS EN DOUBLE s'il y est déjà !)
+Virer tous les hidden
+Virer tous les form et remplacer par passage paramètre dans index.js
+Vérifier que css ne contient pas de MEP sur balise FORM
+Remplacer les gros tableaux js par une lecture de fichier dans Eureka, par exemple.
+Faire la page v_encyclopedie.ejs
+Upgrade les versions old school comme icheck.js, etc.
+Finiii !

@@ -1,0 +1,18 @@
+<table>
+    <thead>
+      <tr>
+        <% if (data.length > 0) { %>
+          <% Object.keys(data[0]).forEach(key => { %>
+            <th><%= key %></th>
+          <% }); %>
+        <% } %>
+      </tr>
+    </thead>
+    <tbody>
+        <% data.forEach(row => { %>
+            <tr>
+              <%= row.rang %>
+            </tr>
+          <% }); %>
+    </tbody>
+  </table>

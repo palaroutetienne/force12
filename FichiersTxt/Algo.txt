@@ -1,0 +1,62 @@
+Algos
+Structure de Etude :
+
+<script type="text/javascript"> //Début script 1
+window.onload
+{
+    var memoRotation;
+
+    nbmat = 0;
+
+Tant que les trois 1ères lettres du rang dans fichier csv correspondent à "l'énoncé" récupéré depuis la page v_auto
+    lire ligne csv
+    nbmat=nbmat+1
+    push de la matrice lue dans un tableau JS
+    Si (nbmat == 1)
+    alors
+        afficher matrice (cf méthode afficher de Matrice PHP)
+    FSI
+    remplacer caractères invisibles \r \n et \r\n du rang provenant du csv par un ";"
+    ligne suivante
+
+FTQ
+
+Puis on assainit la musicalité et la géométrie (remplacer  \r \n et \r\n par ";")
+
+Ensuite, on crée le tableau d'objets tabToutesLesMatrices :
+
+tabToutesLesMatrices.push({
+    id:"'.$uneDesMatrices->getId().'",
+    taille:"'.$uneDesMatrices->getTaille().'",
+    nbSons:"'.$uneDesMatrices->getNbSons().'",
+    enonce:"'.$uneDesMatrices->getEnonce().'",
+    rang:"'.$uneDesMatrices->getRang().'",
+    nomenclature:"'.$uneDesMatrices->getNomenclature().'",
+    origine:"'.$uneDesMatrices->getOrigine().'",
+    origineAnnexe:"'.$uneDesMatrices->getOrigineAnnexe().'",
+    rayon:"'.$uneDesMatrices->getRayon().'",
+    musicalite:"'.$uneDesMatrices->getMusicalite().'",
+    geometrie:"'.$uneDesMatrices->getGeometrie().'",
+    couleur:"'.$uneDesMatrices->getCouleur().'"
+});
+
+Puis :
+var arpege = construireArpege(rotation,tabRotCoord);
+arpegeOriginal = arpege; //Sauvegarde de l arpege du début de l étude
+
+function exportMIDIArp(arpege)
+{
+    ...
+}
+} //Fin de window.onload
+
+$( document ).ready(function() 
+{
+    ...
+    exportMIDIArp(arpege);
+}
+
+fin script 1
+
+<script type="text/javascript">
+ ...
