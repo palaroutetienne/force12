@@ -250,3 +250,9 @@ Parce que le décalage nécessaire pour une orthogonalité et la coloration en s
 Donc traitement spécial pour les matrices de 6 sons suivantes :
 128, 140, 150, 192, 206 et 237. A FAIRE
 Utiliser les soundfonts pour un meilleur rendu des instruments https://github.com/gleitz/midi-js-soundfonts A FAIRE
+
+2025
+A FAIRE
+v_etude.ejs : créer tabToutesMatrices dans index.js et le passer à v_etude.ejs avec la route /v_etude
+créer v_etude_manuel.ejs d'après v_etude_manuel.php ET v_etude.ejs
+modifier v_encyclopédie pour récup enonce ET que ça fonctionne

@@ -1,0 +1,137 @@
+
+					tabJSMat.push({
+						nomStage: "zoneDessin<%= data[0].rang.substring(0, 3) %>",
+						enonce:<%= data[0].enonce %>,
+						x:240,
+						y:240,
+						rayon: 140,	/*Le rayon utilisé par le quadrant de la matrice*/
+						numMat:<%= data[0].rang.substring(0, 3) %>,
+						couleur:"<%= data[0].couleur %>",
+						bicolore:false,
+						rang:"<%= data[0].rang.substring(0, 3) %>"
+						});
+				var tabJSNotes = []; 
+								//Corde
+								
+                                contexte<%= data[0].rang.substring(0, 3) %>.beginPath();
+                                contexte<%= data[0].rang.substring(0, 3) %>.arc(240, 240, 140,0,2.6179938779915,true);
+                                contexte<%= data[0].rang.substring(0, 3) %>.fillStyle = "grey";
+                                contexte<%= data[0].rang.substring(0, 3) %>.fill();
+								contexte<%= data[0].rang.substring(0, 3) %>.closePath();
+    
+                                //Ajouter layer au stage
+                                zoneDessin<%= data[0].rang.substring(0, 3) %>.add(calqueNoteEtCercle<%= data[0].rang.substring(0, 3) %>);
+								zoneDessin<%= data[0].rang.substring(0, 3) %>.draw();
+								
+								//Mémoriser les notes, leur hauteur, leur position, leur nom Konva, leur num matrice et leur ordre
+								
+								tabJSNotes.push({
+									numOrdreNote:0, /*Peut servir à réinit la matrice après rotation*/
+									nommidi:"C4",
+									frequence:262,
+									nomNote:"Do",
+									x:380,
+									y:240,
+									taille:  canvas<%= data[0].rang.substring(0, 3) %>.height*.05
+								  });
+								
+								
+								//Corde
+								
+                                contexte<%= data[0].rang.substring(0, 3) %>.beginPath();
+                                contexte<%= data[0].rang.substring(0, 3) %>.arc(240, 240, 140,2.6179938779915,4.7123889803847,true);
+                                contexte<%= data[0].rang.substring(0, 3) %>.fillStyle = "grey";
+                                contexte<%= data[0].rang.substring(0, 3) %>.fill();
+								contexte<%= data[0].rang.substring(0, 3) %>.closePath();
+    
+                                //Ajouter layer au stage
+                                zoneDessin<%= data[0].rang.substring(0, 3) %>.add(calqueNoteEtCercle<%= data[0].rang.substring(0, 3) %>);
+								zoneDessin<%= data[0].rang.substring(0, 3) %>.draw();
+								
+								//Mémoriser les notes, leur hauteur, leur position, leur nom Konva, leur num matrice et leur ordre
+								
+								tabJSNotes.push({
+									numOrdreNote:1, /*Peut servir à réinit la matrice après rotation*/
+									nommidi:"F4",
+									frequence:349,
+									nomNote:"Fa",
+									x:118.75644347018,
+									y:310,
+									taille:  canvas<%= data[0].rang.substring(0, 3) %>.height*.05
+								  });
+								
+								
+								//Corde
+								
+                                contexte<%= data[0].rang.substring(0, 3) %>.beginPath();
+                                contexte<%= data[0].rang.substring(0, 3) %>.arc(240, 240, 140,4.7123889803847,5.235987755983,true);
+                                contexte<%= data[0].rang.substring(0, 3) %>.fillStyle = "grey";
+                                contexte<%= data[0].rang.substring(0, 3) %>.fill();
+								contexte<%= data[0].rang.substring(0, 3) %>.closePath();
+    
+                                //Ajouter layer au stage
+                                zoneDessin<%= data[0].rang.substring(0, 3) %>.add(calqueNoteEtCercle<%= data[0].rang.substring(0, 3) %>);
+								zoneDessin<%= data[0].rang.substring(0, 3) %>.draw();
+								
+								//Mémoriser les notes, leur hauteur, leur position, leur nom Konva, leur num matrice et leur ordre
+								
+								tabJSNotes.push({
+									numOrdreNote:2, /*Peut servir à réinit la matrice après rotation*/
+									nommidi:"A4",
+									frequence:440,
+									nomNote:"La",
+									x:240,
+									y:100,
+									taille:  canvas<%= data[0].rang.substring(0, 3) %>.height*.05
+								  });
+								
+								
+								//Corde
+								
+                                contexte<%= data[0].rang.substring(0, 3) %>.beginPath();
+                                contexte<%= data[0].rang.substring(0, 3) %>.arc(240, 240, 140,5.235987755983,5.7595865315813,true);
+                                contexte<%= data[0].rang.substring(0, 3) %>.fillStyle = "grey";
+                                contexte<%= data[0].rang.substring(0, 3) %>.fill();
+								contexte<%= data[0].rang.substring(0, 3) %>.closePath();
+    
+                                //Ajouter layer au stage
+                                zoneDessin<%= data[0].rang.substring(0, 3) %>.add(calqueNoteEtCercle<%= data[0].rang.substring(0, 3) %>);
+								zoneDessin<%= data[0].rang.substring(0, 3) %>.draw();
+								
+								//Mémoriser les notes, leur hauteur, leur position, leur nom Konva, leur num matrice et leur ordre
+								
+								tabJSNotes.push({
+									numOrdreNote:3, /*Peut servir à réinit la matrice après rotation*/
+									nommidi:"A#4",
+									frequence:466,
+									nomNote:"La#",
+									x:310,
+									y:118.75644347018,
+									taille:  canvas<%= data[0].rang.substring(0, 3) %>.height*.05
+								  });
+								
+								
+								//Corde
+								
+                                contexte<%= data[0].rang.substring(0, 3) %>.beginPath();
+                                contexte<%= data[0].rang.substring(0, 3) %>.arc(240, 240, 140,5.7595865315813,0,true);
+                                contexte<%= data[0].rang.substring(0, 3) %>.fillStyle = "grey";
+                                contexte<%= data[0].rang.substring(0, 3) %>.fill();
+								contexte<%= data[0].rang.substring(0, 3) %>.closePath();
+    
+                                //Ajouter layer au stage
+                                zoneDessin<%= data[0].rang.substring(0, 3) %>.add(calqueNoteEtCercle<%= data[0].rang.substring(0, 3) %>);
+								zoneDessin<%= data[0].rang.substring(0, 3) %>.draw();
+								
+								//Mémoriser les notes, leur hauteur, leur position, leur nom Konva, leur num matrice et leur ordre
+								
+								tabJSNotes.push({
+									numOrdreNote:4, /*Peut servir à réinit la matrice après rotation*/
+									nommidi:"B4",
+									frequence:494,
+									nomNote:"Si",
+									x:361.24355652982,
+									y:170,
+									taille:  canvas<%= data[0].rang.substring(0, 3) %>.height*.05
+								  });
+								

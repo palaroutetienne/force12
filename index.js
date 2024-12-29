@@ -62,14 +62,20 @@ const lireCSV = (idMat,filePath) => {
         .pipe(csvParser())
         .on('data', (data) => results.push(data))
         .on('end', () => {
-            var nblig = results.length;
-
             // Filter rows matching the condition
             var idEtRang = results
                 .filter(row => row.enonce === idMat)
                 .map(row => ({  id: row.id,
+                                nbSons: row.nbSons,
+                                enonce: row.enonce.toString(),
                                 rang: row.rang,
-                                nbSons: row.nbSons
+                                nomenclature: row.nomenclature,
+                                origine: row.origine,
+                                origineAnnexe: row.origineAnnexe,
+                                couleur: row.couleur,
+                                musicalite: row.musicalite,
+                                geometrie: row.geometrie,
+                                bicolore: row.nbSons == 6 ? true : false
                             }))
                 ;
 
@@ -109,14 +115,14 @@ app.get('/v_auto', (req, res) => {
         var alea = Math.floor(Math.random() * nblig);
         var rangAlea = Object.values(results)[alea].rang.substring(0, 3);
         var nbSons = Object.values(results)[alea].nbSons;
-        var enonce = Object.values(results)[alea].enonce;
+        var enonce = Object.values(results)[alea].enonce.toString();
         var nomencEtOrig = [];
 
         var nomencEtOrig = results
             .filter(row => row.rang.substring(0, 3) === rangAlea)
             .map(row => row.nomenclature + "@" + row.origine);
 
-        res.render('v_auto', {donnee: results, matriceAlea: rangAlea, nbSons: nbSons, nomencEtOrig: nomencEtOrig, enonce: enonce});
+        res.render('v_auto', {donnee: results, matriceAlea: rangAlea, nbSons: nbSons, nomencEtOrig: nomencEtOrig, enonce: enonce.toString()});
     });
 });
 
